@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "title": "SAN JUAQUIN 201",
+    "desc": "Renovación en dos etapas 2019 - 2024, un espacio tradicional que evoluciona.",
+    "detalles": "Este proyecto consistió en la renovación arquitectónica completa de una vivienda urbana tradicional. Se incorporaron elementos de diseño modernos respetando la estructura original. La ejecución se dividió en dos fases y contempló mejoras en espacios sociales, cocina, y la conexión visual con zonas exteriores. También se incluyeron soluciones mobiliarias a medida.",
+    "tags": ["Diseño", "Construcción", "Mobiliario"]
+  },
+  {
+    "id": 1,
+    "title": "CONSULTORIO MÉDICO",
+    "desc": "Aprovechamos cada centímetro para crear un consultorio flexible, elegante y acogedor.",
+    "detalles": "Reforma interior de espacio médico con enfoque en funcionalidad y calidez. Se utilizaron colores neutros, materiales de fácil mantenimiento, y mobiliario ergonómico. El resultado es un espacio que transmite profesionalismo y tranquilidad.",
+    "tags": ["Diseño", "Construcción", "Mobiliario"]
+  },
+  {
+    "id": 2,
+    "title": "LOCAL GASTRONÓMICO",
+    "desc": "Diseñado para ofrecer una experiencia culinaria íntima y contemporánea.",
+    "detalles": "Este restaurante boutique fue diseñado con un enfoque minimalista y materiales como madera, concreto pulido y luces cálidas. El mobiliario fue diseñado a medida para maximizar espacio y funcionalidad.",
+    "tags": ["Diseño"]
+  },
+  {
+    "id": 3,
+    "title": "VIVIENDA CAMPESTRE",
+    "desc": "Una propuesta que mezcla lo moderno con el encanto natural del entorno.",
+    "detalles": "Diseño arquitectónico de una casa en zona rural con amplias ventanas, integración del interior con el paisaje, techos altos y materiales sostenibles. Se realizó el diseño interior y el amoblamiento completo.",
+    "tags": ["Diseño", "Mobiliario"]
+  }
+]

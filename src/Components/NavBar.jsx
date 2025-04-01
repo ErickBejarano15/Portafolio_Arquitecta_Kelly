@@ -29,9 +29,9 @@ const NavBar = () => {
       <nav className='bg-gris-canva shadow-lg py-3 px-8 md:px-32 flex justify-between items-center'>
         <Link to="/">
           <span className='flex flex-col leading-tight'>
-            <span className='font-rem text-4xl text-black'>KELLY</span>
+            <span className='font-rem text-4xl text-slate-900'>KELLY</span>
             <span className='font-rem text-xl text-black'>BENJUMEA</span>
-            <span className='font-rem text-xl text-black'>PROYECTOS</span>
+            <span className='font-montserrat text-xl text-black'>PROYECTOS</span>
           </span>
         </Link>
 
@@ -43,19 +43,19 @@ const NavBar = () => {
         {/* Navigation links */}
         <div className={`absolute top-full left-0 w-full bg-gris-canva md:bg-transparent md:static md:flex md:items-center md:w-auto transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:opacity-100 md:max-h-screen'}`}>
           <div className='flex flex-col md:flex-row md:gap-5'>
-          <Link to="/" className='block py-2 px-4 font-montserrat text-black hover:text-teal-200 hover:bg-slate-700 transition duration-300'>
+          <Link to="/" className='block py-2 px-4 font-montserrat text-black hover:text-yellow-500 transition duration-300'>
               Inicio
             </Link>
-            <Link to="/about" className='block py-2 px-4 font-montserrat text-black hover:text-teal-200 hover:bg-slate-700 transition duration-300'>
+            <Link to="/about" className='block py-2 px-4 font-montserrat text-black hover:text-yellow-500  transition duration-300'>
               Sobre Mí
             </Link>
-            <Link to="/Servicios" className='block py-2 px-4 font-montserrat text-black hover:text-teal-200 hover:bg-slate-700 transition duration-300'>
+            <Link to="/Servicios" className='block py-2 px-4 font-montserrat text-black hover:text-yellow-500  transition duration-300'>
               Servicios
             </Link>
-            <Link to="/Proyectos" className='block py-2 px-4 font-montserrat text-black hover:text-teal-200 hover:bg-slate-700 transition duration-300'>
+            <Link to="/Proyectos" className='block py-2 px-4 font-montserrat text-black hover:text-yellow-500 transition duration-300'>
               Proyectos
             </Link>
-            <Link to="/Contacto" className='block py-2 px-4 font-montserrat text-black hover:text-teal-200 hover:bg-slate-700 transition duration-300'>
+            <Link to="/Contact" className='block py-2 px-4 font-montserrat text-black hover:text-yellow-500  transition duration-300'>
               Contacto
             </Link>
           </div>
