@@ -39,17 +39,18 @@ const servicios = [
 const Servicios_Review = () => {
   return (
     <section className="w-full py-12 px-4 md:px-32 font-manrope">
-      {/* Título */}
+      {/* Título principal */}
       <div className="relative mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 text-left">Servicios</h2>
-        <div className="w-[100%] h-[2px] bg-black origin-left transform skew-x-[-30deg]"></div>
+        <h2 className="text-3xl md:text-4xl font-bold mb-2 uppercase text-[#598242]">Servicios</h2>
+        <div className="w-full h-[2px] bg-black origin-left transform skew-x-[-30deg]"></div>
       </div>
 
-      {/* Vista móvil: Slider */}
+      {/* Vista móvil: Slider suave */}
       <div className="block md:hidden">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 8000, disableOnInteraction: false }}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          speed={800}
           spaceBetween={16}
           slidesPerView={1}
         >
@@ -69,20 +70,24 @@ const Servicios_Review = () => {
         </Swiper>
       </div>
 
-      {/* Vista escritorio: Grid tipo tarjetas */}
+      {/* Vista escritorio tipo cuadrícula */}
       <div className="hidden md:grid md:grid-cols-2 md:gap-8">
         {servicios.map((s) => (
           <div
             key={s.id}
-            className="relative group h-[300px] overflow-hidden cursor-pointer"
+            className="relative group overflow-hidden h-[300px] cursor-pointer"
           >
+            {/* Imagen con escala y efecto escala de grises */}
             <img
               src={s.img}
               alt={s.titulo}
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transform transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition duration-300 flex items-center justify-center text-center">
-              <h3 className="text-white text-2xl font-bold px-4">{s.titulo}</h3>
+            {/* Texto centrado absoluto */}
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition duration-300">
+              <h3 className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-[#a39240]">
+                {s.titulo}
+              </h3>
             </div>
           </div>
         ))}
