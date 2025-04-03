@@ -21,7 +21,7 @@ const Proyectos = () => {
         );
 
   return (
-    <section className="w-full bg-gris-canva py-12 px-6 md:px-20 font-manrope -mt-10">
+    <section className="w-full bg-white py-12 px-6 md:px-20 font-manrope -mt-10">
       <Resumen_Proyectos />
       <Filtro_Servicios filtro={filtro} setFiltro={setFiltro} />
       <Lista_Proyectos proyectos={proyectosFiltrados} />

@@ -7,7 +7,7 @@ import Reviews from '../Components/Components_Home/Reviews'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-white'>
       <High_Slider/>
       <Servicios_Review/>
       <Proyectos_Preview/>

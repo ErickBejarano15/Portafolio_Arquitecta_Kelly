@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black py-8 px-4 md:px-32 font-montserrat">
+    <footer className="bg-gris-canva text-black py-8 px-4 md:px-32 font-montserrat">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
         {/* Sección izquierda */}
         <div>

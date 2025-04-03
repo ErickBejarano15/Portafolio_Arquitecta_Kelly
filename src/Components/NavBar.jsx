@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <nav className='bg-white shadow-lg py-2 md:py-3 px-4 md:px-32 flex justify-between items-center'>
+      <nav className='bg-gris-canva shadow-lg py-2 md:py-3 px-4 md:px-32 flex justify-between items-center'>
         {/* Logo / Marca */}
         <Link to="/">
           {/* Logo */}

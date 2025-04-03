@@ -3,7 +3,7 @@ import img from '../assets/Home/Aboutme/foto-kelly.png';
 
 const About = () => {
   return (
-    <section className="w-full bg-gris-canva text-black font-manrope px-6 py-12 md:px-32 -mt-10">
+    <section className="w-full bg-white text-black font-manrope px-6 py-12 md:px-32 -mt-10">
       {/* Encabezado */}
       <div className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold font-montserrat mb-2">Sobre Mí</h1>

@@ -30,7 +30,7 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="w-full bg-gris-canva py-16 px-4 md:px-32 font-manrope">
+    <section className="w-full  py-16 px-4 md:px-32 font-manrope">
       <h2 className="text-center text-2xl md:text-3xl font-semibold mb-12">
         ¿Qué dicen los clientes?
       </h2>

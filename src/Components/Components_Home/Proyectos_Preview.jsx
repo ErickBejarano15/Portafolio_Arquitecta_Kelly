@@ -16,7 +16,7 @@ const Proyectos_Preview = () => {
   }));
 
   return (
-    <section className="w-full bg-gris-canva py-12 px-4 md:px-32 font-manrope">
+    <section className="w-full py-12 px-4 md:px-32 font-manrope">
       {/* Título principal */}
       <div className="relative mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-left">Proyectos</h2>

@@ -45,7 +45,7 @@ const servicios = [
 
 const Servicios = () => {
   return (
-    <section className="w-full bg-gris-canva text-black px-6 py-12 md:px-32 font-manrope -mt-10">
+    <section className="w-full bg-white text-black px-6 py-12 md:px-32 font-manrope -mt-10">
       <h1 className="text-4xl md:text-5xl font-bold font-montserrat mb-2">Servicios</h1>
       <div className="w-full h-[1px] bg-black mb-12" />
 
