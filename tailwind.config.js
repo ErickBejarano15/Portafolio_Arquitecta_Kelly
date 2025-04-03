@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'gris-canva': '#CDCFC0',
-        'background-color': '#99A297',
+        'gris-canva': '#5F7553',
+        'background-color': '#5F7553',
         'gris-canva-osc': '#2D302D',
       },
       fontFamily: {
