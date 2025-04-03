@@ -39,10 +39,9 @@ const servicios = [
 const Servicios_Review = () => {
   return (
     <section className="w-full py-12 px-4 md:px-32 font-manrope">
-      {/* Título principal */}
-      <div className="relative mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2 uppercase text-[#598242]">Servicios</h2>
-        <div className="w-full h-[2px] bg-black origin-left transform skew-x-[-30deg]"></div>
+      {/* Título centrado y sin línea */}
+      <div className="relative mb-12 text-center">
+        <h2 className="text-3xl font-monsetrrat md:text-5xl font-bold uppercase text-[#598242]">Servicios</h2>
       </div>
 
       {/* Vista móvil: Slider suave */}
@@ -77,15 +76,17 @@ const Servicios_Review = () => {
             key={s.id}
             className="relative group overflow-hidden h-[300px] cursor-pointer"
           >
-            {/* Imagen con escala y efecto escala de grises */}
             <img
               src={s.img}
               alt={s.titulo}
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transform transition-transform duration-700 group-hover:scale-110"
             />
-            {/* Texto centrado absoluto */}
             <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition duration-300">
-              <h3 className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-[#a39240]">
+              <h3 className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-white"
+               style={{
+                textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
+              }}
+              >
                 {s.titulo}
               </h3>
             </div>
