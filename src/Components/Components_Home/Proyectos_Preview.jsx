@@ -18,8 +18,8 @@ const Proyectos_Preview = () => {
   return (
     <section className="w-full py-12 px-4 md:px-32 font-manrope">
       {/* Título principal */}
-      <div className="relative mb-12">
-        <h2 className="text-3xl md:text-4xl text-[#598242] font-bold mb-2 text-left">Proyectos</h2>
+      <div className="relative mb-12 text-center">
+        <h2 className="text-5xl md:text-4xl text-[#598242] font-bold mb-2 text-left">Proyectos</h2>
       </div>
 
       {/* Swiper / Carrusel */}
