@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'gris-canva': '#99A297',
+        'gris-canva': '#CDCFC0',
         'background-color': '#99A297',
         'gris-canva-osc': '#2D302D',
       },

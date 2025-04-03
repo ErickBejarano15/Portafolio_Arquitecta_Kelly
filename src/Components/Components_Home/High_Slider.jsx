@@ -17,7 +17,7 @@ const High_Slider = () => {
   ];
 
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto -mt-20">
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={0}

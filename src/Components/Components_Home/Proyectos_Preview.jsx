@@ -26,11 +26,11 @@ const Proyectos_Preview = () => {
       {/* Swiper / Carrusel */}
       <Swiper
         modules={[Autoplay, Pagination]}
-        spaceBetween={16} // ← AQUI puedes ajustar el espacio entre tarjetas
+        spaceBetween={8} // ← AQUÍ puedes cambiar el espacio entre tarjetas (en píxeles)
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 4 }, // ← Cambia cuántas tarjetas aparecen en escritorio
         }}
         autoplay={{
           delay: 10000,
@@ -40,12 +40,14 @@ const Proyectos_Preview = () => {
       >
         {proyectos.map((proyecto) => (
           <SwiperSlide key={proyecto.id}>
-            <div className="relative group overflow-hidden border shadow-md">
+            <div className="relative group overflow-hidden shadow-md border-none">
               {/* IMAGEN */}
               <img
                 src={proyecto.img}
                 alt={proyecto.title}
-                className="w-full h-[380px] object-cover group-hover:opacity-40 transition duration-500" // ← Cambia aquí el alto
+                className="w-full h-[480px] object-cover rounded-none group-hover:opacity-40 transition duration-500"
+                // ↑ Cambia `h-[380px]` para ajustar la ALTURA de la tarjeta (Ej: h-[320px])
+                // ↑ Puedes usar `rounded-md` si quieres bordes redondeados
               />
 
               {/* CONTENIDO AL HACER HOVER */}
@@ -54,7 +56,6 @@ const Proyectos_Preview = () => {
 
                 {proyecto.desc && (
                   <p className="text-sm mb-3 max-w-sm text-justify">
-                    {/* ← Justificado aquí */}
                     {proyecto.desc}
                   </p>
                 )}
@@ -93,19 +94,6 @@ const Proyectos_Preview = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* BOTÓN GENERAL */}
-      <div className="mt-12 text-center">
-        <Link
-          to="/proyectos"
-          className="inline-block relative px-8 py-3 text-white font-semibold overflow-hidden group bg-slate-600 shadow-md"
-        >
-          <span className="absolute inset-0 bg-gris-canva-osc transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0"></span>
-          <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-            Conocer más
-          </span>
-        </Link>
-      </div>
     </section>
   );
 };

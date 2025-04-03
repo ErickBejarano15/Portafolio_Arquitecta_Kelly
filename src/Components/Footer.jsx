@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gris-canva-osc text-white py-8 px-4 md:px-32 font-montserrat">
+    <footer className="bg-white text-black py-8 px-4 md:px-32 font-montserrat">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
         {/* Sección izquierda */}
         <div>
@@ -20,10 +20,10 @@ const Footer = () => {
 
         {/* Sección derecha */}
         <div className="flex gap-4">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="bg-gris-canva text-gris-canva-osc p-2 rounded-full">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="bg-slate-200 text-gris-canva-osc p-2 rounded-full">
             <FaInstagram className="text-lg" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="bg-gris-canva text-gris-canva-osc p-2 rounded">
+          <a href="#" target="_blank" rel="noopener noreferrer" className="bg-slate-200 text-gris-canva-osc p-2 rounded">
             <FaLinkedin className="text-lg" />
           </a>
         </div>

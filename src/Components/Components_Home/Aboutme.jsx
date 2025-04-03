@@ -45,7 +45,7 @@ const Aboutme = () => {
         </div>
       </div>
       {/* Botón */}
-            <div className="mt-12 text-center">
+            {/*<div className="mt-12 text-center">
               <Link
                 to="/Servicios"
                 className="inline-block relative px-8 py-3 text-white font-semibold overflow-hidden group bg-slate-600 rounded-md shadow-md"
@@ -55,7 +55,7 @@ const Aboutme = () => {
                   Conocer más
                 </span>
               </Link>
-            </div>
+            </div>*/}
 
     </section>
   );
