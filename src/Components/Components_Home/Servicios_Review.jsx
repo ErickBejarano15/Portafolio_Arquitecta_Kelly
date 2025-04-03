@@ -103,7 +103,7 @@ const Servicios_Review = () => {
           to="/Servicios"
           className="inline-block relative px-8 py-3 text-white font-semibold overflow-hidden group bg-slate-600 rounded-md shadow-md"
         >
-          <span className="absolute inset-0 bg-gris-canva-osc transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0 rounded-md"></span>
+          <span className="absolute inset-0 bg-lime-400 transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0 rounded-md"></span>
           <span className="relative z-10 group-hover:text-white transition-colors duration-300">
             Conocer más
           </span>

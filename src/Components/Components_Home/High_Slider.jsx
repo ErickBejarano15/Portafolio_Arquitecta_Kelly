@@ -11,8 +11,8 @@ import imgSlide3 from '../../assets/Home/High_Slader/slide3.png'
 const High_Slider = () => {
 
   const slides = [
-    { image: imgSlide1, text: 'ESPACIOS QUE CUENTAN TÚ HISTORIA' },
-    { image: imgSlide2, text: 'ACOMPAÑAMIENTO EXPERTÓ PARA EL RECIBO DE TUS PROYECTOS' },
+    { image: imgSlide1, text: 'ACOMPAÑAMIENTO EXPERTÓ PARA EL RECIBO DE TUS PROYECTOS' },
+    { image: imgSlide2, text: 'ESPACIOS QUE CUENTAN TÚ HISTORIA' },
     { image: imgSlide3, text: 'GARANTIZANDO LA MÁS ALTA CALIDAD EN CADA FASE DEL PROCESO'},
   ];
 
