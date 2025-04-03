@@ -39,7 +39,7 @@ const servicios = [
 const Servicios_Review = () => {
   return (
     <section className="w-full py-12 px-4 md:px-32 font-manrope">
-      {/* Título principal */}
+      {/* Título */}
       <div className="relative mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 text-left">Servicios</h2>
         <div className="w-[100%] h-[2px] bg-black origin-left transform skew-x-[-30deg]"></div>
@@ -56,42 +56,33 @@ const Servicios_Review = () => {
           {servicios.map((s) => (
             <SwiperSlide key={s.id}>
               <div className="flex flex-col items-center gap-4 text-center">
-                {/* Imagen móvil con hover zoom */}
                 <img
                   src={s.img}
                   alt={s.titulo}
                   className="w-full h-[250px] object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <h3 className="text-xl font-bold">{s.titulo}</h3> {/* ← Cambia tipografía y tamaño aquí */}
-                <p className="text-sm px-2">{s.descripcion}</p>   {/* ← Cambia tamaño del texto aquí */}
+                <h3 className="text-xl font-bold">{s.titulo}</h3>
+                <p className="text-sm px-2">{s.descripcion}</p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* Vista escritorio: Intercalado */}
-      <div className="hidden md:flex flex-col gap-20">
-        {servicios.map((s, index) => (
+      {/* Vista escritorio: Grid tipo tarjetas */}
+      <div className="hidden md:grid md:grid-cols-2 md:gap-8">
+        {servicios.map((s) => (
           <div
             key={s.id}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
-              index % 2 === 1 ? 'md:flex-row-reverse' : ''
-            }`}
+            className="relative group h-[300px] overflow-hidden cursor-pointer"
           >
-            {/* Imagen con hover */}
-            <div className="w-full md:w-1/2">
-              <img
-                src={s.img}
-                alt={s.titulo}
-                className="w-full h-[250px] object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-
-            {/* Texto */}
-            <div className="w-full md:w-1/2 text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-2">{s.titulo}</h3> {/* ← Cambia tamaño y fuente del título aquí */}
-              <p className="text-base text-gray-700">{s.descripcion}</p> {/* ← Cambia tamaño de texto aquí */}
+            <img
+              src={s.img}
+              alt={s.titulo}
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+            />
+            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition duration-300 flex items-center justify-center text-center">
+              <h3 className="text-white text-2xl font-bold px-4">{s.titulo}</h3>
             </div>
           </div>
         ))}
@@ -101,12 +92,9 @@ const Servicios_Review = () => {
       <div className="mt-12 text-center">
         <Link
           to="/Servicios"
-          className="inline-block relative px-8 py-3 text-white font-semibold overflow-hidden group bg-slate-600 rounded-md shadow-md"
+          className="inline-block relative px-8 py-3 text-black font-semibold bg-lime-400 rounded-md shadow-md transition-colors hover:bg-lime-500"
         >
-          <span className="absolute inset-0 bg-lime-400 transition-transform duration-500 ease-out transform -translate-x-full group-hover:translate-x-0 rounded-md"></span>
-          <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-            Conocer más
-          </span>
+          Conocer más
         </Link>
       </div>
     </section>
