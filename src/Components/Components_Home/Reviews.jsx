@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import imgFernando from '../../assets/Home/Reviews/fernando.png';
+import imgGladis from '../../assets/Home/Reviews/gladis.png';
 
 const Reviews = () => {
   const testimonios = [
@@ -12,11 +13,12 @@ const Reviews = () => {
       texto:
         'Kelly ha sido una excelente profesional en varios proyectos que he realizado con ella, es una persona muy cumplida, organizada y responsable, pone detalle en todo lo que hace y se acomoda fácilmente a tu presupuesto. Sin duda la volvería a contratar en un futuro.',
     },
-    // {
-    //   nombre: 'María López',
-    //   imagen: 'ruta/a/maria.jpg',
-    //   texto: 'Kelly logró plasmar nuestra idea en un diseño funcional y hermoso. La recomiendo 100%.'
-    // },
+    {
+      nombre: 'Gladis',
+      imagen: imgGladis,
+      texto: 
+      'Conozco el trabajo y desempeño profesional de la arquitecta Kelly. De hecho hemos contratado la reforma de nuestro apartamento y otros más. Su planificación,ejecución y entrega de los trabajos han sido a satisfacción. Recomiendo, a quienes estén en planes de construir,modificar,remodelar que cuenten con su asesoría.',
+    },
     // {
     //   nombre: 'Carlos Martínez',
     //   imagen: 'ruta/a/carlos.jpg',
