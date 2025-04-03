@@ -100,7 +100,7 @@ const Servicios_Review = () => {
           to="/Servicios"
           className="inline-block relative px-8 py-3 text-black font-semibold bg-lime-400 rounded-md shadow-md transition-colors hover:bg-lime-500"
         >
-          Conocer más
+          Ver más
         </Link>
       </div>
     </section>
