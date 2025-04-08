@@ -41,7 +41,7 @@ const Servicios_Review = () => {
     <section className="w-full py-12 px-4 md:px-32 font-asap">
       {/* Título centrado y sin línea */}
       <div className="relative mb-12 text-center">
-        <h2 className="text-3xl font-monsetrrat md:text-5xl font-bold uppercase text-[#598242]">Servicios</h2>
+        <h2 className="text-3xl font-asap md:text-5xl font-bold uppercase text-[#598242]">Servicios</h2>
       </div>
 
       {/* Vista móvil: Slider suave */}
@@ -70,29 +70,31 @@ const Servicios_Review = () => {
       </div>
 
       {/* Vista escritorio tipo cuadrícula */}
-      <div className="hidden md:grid md:grid-cols-2 md:gap-8">
-        {servicios.map((s) => (
-          <div
-            key={s.id}
-            className="relative group overflow-hidden h-[300px] cursor-pointer"
-          >
-            <img
-              src={s.img}
-              alt={s.titulo}
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transform transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition duration-300">
-              <h3 className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-white"
-               style={{
-                textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
-              }}
-              >
-                {s.titulo}
-              </h3>
-            </div>
-          </div>
-        ))}
+<div className="hidden md:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
+  {servicios.map((s) => (
+    <div
+      key={s.id}
+      className="relative group overflow-hidden h-[250px] cursor-pointer"
+    >
+      <img
+        src={s.img}
+        alt={s.titulo}
+        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transform transition-transform duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition duration-300">
+        <h3
+          className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-white"
+          style={{
+            textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
+          }}
+        >
+          {s.titulo}
+        </h3>
       </div>
+    </div>
+  ))}
+</div>
+
 
       {/* Botón final */}
       <div className="mt-12 text-center">
