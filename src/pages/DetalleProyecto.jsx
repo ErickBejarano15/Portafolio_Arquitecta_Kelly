@@ -21,7 +21,7 @@ const DetalleProyecto = () => {
   ];
 
   return (
-    <div className="px-6 py-12 md:px-32 bg-gray-50 font-manrope">
+    <div className="px-6 py-12 md:px-32 bg-gray-50 font-asap">
       {/* Título */}
       <h1 className="text-4xl font-gowun mb-2">{proyecto.title}</h1>
       <div className="w-full h-[1px] bg-black mb-8" />

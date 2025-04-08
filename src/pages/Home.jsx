@@ -7,7 +7,7 @@ import Reviews from '../Components/Components_Home/Reviews'
 
 const Home = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white font-asap'>
       <High_Slider/>
       <Servicios_Review/>
       <Proyectos_Preview/>

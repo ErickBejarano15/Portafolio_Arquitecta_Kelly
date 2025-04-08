@@ -38,7 +38,7 @@ const servicios = [
 
 const Servicios_Review = () => {
   return (
-    <section className="w-full py-12 px-4 md:px-32 font-manrope">
+    <section className="w-full py-12 px-4 md:px-32 font-asap">
       {/* Título centrado y sin línea */}
       <div className="relative mb-12 text-center">
         <h2 className="text-3xl font-monsetrrat md:text-5xl font-bold uppercase text-[#598242]">Servicios</h2>

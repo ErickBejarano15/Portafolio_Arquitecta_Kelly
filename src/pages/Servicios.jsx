@@ -45,13 +45,13 @@ const servicios = [
 
 const Servicios = () => {
   return (
-    <section className="w-full bg-white text-black px-6 py-12 md:px-32 font-manrope -mt-10">
+    <section className="w-full bg-white text-black px-6 py-12 md:px-32 font-asap -mt-10">
       <h1 className="text-4xl md:text-5xl font-bold font-montserrat mb-2">Servicios</h1>
       <div className="w-full h-[1px] bg-black mb-12" />
 
       {servicios.map((servicio) => (
         <div key={servicio.id} className="mb-20">
-          <h2 className="text-2xl md:text-3xl font-semibold font-gowun mb-4">{servicio.titulo}</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold font-asap mb-4">{servicio.titulo}</h2>
           <p className="text-base md:text-lg text-justify text-gray-700 mb-4">{servicio.descripcion}</p>
 
           <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6 text-justify">

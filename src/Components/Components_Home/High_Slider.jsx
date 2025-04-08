@@ -31,7 +31,7 @@ const High_Slider = () => {
             <div className="relative w-full">
               <img src={slide.image} alt={`Slide ${idx}`} className="w-full h-screen object-cover" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
-                <h2 className="text-white text-3xl md:text-5xl font-bold font-gowun_dodum text-center px-4">
+                <h2 className="text-white text-3xl md:text-5xl font-bold font-asap text-left px-4">
                   {slide.text}
                 </h2>
               </div>

@@ -32,7 +32,7 @@ const Reviews = () => {
   ];
 
   return (
-    <section className="w-full text-[#598242] py-16 px-4 md:px-32 font-manrope">
+    <section className="w-full text-[#598242] py-16 px-4 md:px-32 font-asap">
       <h2 className="text-center text-5xl md:text-3xl font-semibold mb-12">
         ¿Qué dicen los clientes?
       </h2>
@@ -51,7 +51,7 @@ const Reviews = () => {
                 alt={testimonio.nombre}
                 className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
               />
-              <h3 className="font-semibold text-base mb-2">{testimonio.nombre}</h3>
+              <h3 className="font-semibold text-black text-base mb-2">{testimonio.nombre}</h3>
               <p className="text-sm text-gray-800 leading-relaxed">
                 {testimonio.texto}
               </p>

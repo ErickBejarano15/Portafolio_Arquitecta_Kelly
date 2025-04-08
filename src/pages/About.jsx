@@ -3,10 +3,10 @@ import img from '../assets/Home/Aboutme/foto-kelly.png';
 
 const About = () => {
   return (
-    <section className="w-full bg-white text-black font-manrope px-6 py-12 md:px-32 -mt-10">
+    <section className="w-full bg-white text-black font-asap px-6 py-12 md:px-32 -mt-10">
       {/* Encabezado */}
       <div className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold font-montserrat mb-2">Sobre Mí</h1>
+        <h1 className="text-4xl md:text-5xl font-bold font-asap mb-2">Sobre Mí</h1>
         <div className="w-full h-[1px] bg-black mb-6" /> {/* Línea fina al 100% */}
         <p className="text-gray-700 max-w-3xl text-lg text-justify">
           Soy Kelly Benjumea, arquitecta apasionada por transformar espacios en experiencias que inspiran, confortan y representan a las personas que los habitan. Mi enfoque combina diseño arquitectónico, interiorismo y soluciones integrales “llave en mano”.
@@ -16,7 +16,7 @@ const About = () => {
       {/* Proyectos y servicios */}
       <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
         <div>
-          <h2 className="text-2xl font-semibold font-gowun mb-2">Lo que hago</h2>
+          <h2 className="text-2xl font-semibold font-asap mb-2">Lo que hago</h2>
           <div className="w-1/2 h-[1px] bg-black mb-4" /> {/* Línea fina al 50% */}
           <ul className="list-disc list-inside text-gray-700 space-y-2 text-base text-justify">
             <li><strong>Diseño arquitectónico:</strong> conceptualización, modelado y presentación.</li>

@@ -3,7 +3,7 @@ import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
   return (
-    <section className="w-full min-h-screen -mt-10 bg-white text-black font-manrope px-6 py-12 md:px-32 flex flex-col items-center justify-center">
+    <section className="w-full min-h-screen -mt-10 bg-white text-black font-asap px-6 py-12 md:px-32 flex flex-col items-center justify-center">
       <h1 className="text-4xl md:text-5xl font-bold font-montserrat mb-4">Contáctame</h1>
       <div className="w-full max-w-xl text-center text-gray-700 text-lg text-justify mb-8">
         Estoy disponible para conversar sobre tus proyectos, ideas o colaboraciones.
