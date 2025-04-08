@@ -61,7 +61,7 @@ const Proyectos_Preview = () => {
 
                 {proyecto.desc && (
                   <p
-                    className="text-sm mb-3 max-w-sm text-justify font-manrope font-bold"
+                    className="text-xs mb-3 max-w-sm text-justify font-manrope font-semibold"
                     style={{
                       textShadow: '1px 1px 2px rgba(0,0,0,0.7)',
                     }}
@@ -74,19 +74,19 @@ const Proyectos_Preview = () => {
                 <div className="flex flex-col gap-2 text-sm mb-4">
                   {proyecto.tags?.includes('Diseño') && (
                     <div className="flex items-center gap-2">
-                      <TfiPencilAlt className="text-xl" />
+                      <TfiPencilAlt className="text-xs" />
                       <span>Diseño</span>
                     </div>
                   )}
                   {proyecto.tags?.includes('Construcción') && (
                     <div className="flex items-center gap-2">
-                      <FaHardHat className="text-xl" />
+                      <FaHardHat className="text-xs" />
                       <span>Construcción</span>
                     </div>
                   )}
                   {proyecto.tags?.includes('Mobiliario') && (
                     <div className="flex items-center gap-2">
-                      <FaCouch className="text-xl" />
+                      <FaCouch className="text-xs" />
                       <span>Mobiliario</span>
                     </div>
                   )}
