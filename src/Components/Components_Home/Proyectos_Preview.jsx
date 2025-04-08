@@ -19,7 +19,7 @@ const Proyectos_Preview = () => {
     <section className="w-full py-12 px-4 md:px-32 font-asap font-bold">
       {/* Título principal */}
       <div className="relative mb-12 text-center">
-        <h2 className="text-5xl md:text-5xl text-[#598242] text-center mb-2">Proyectos</h2>
+        <h2 className="text-5xl md:text-5xl text-[#598242] text-center uppercase mb-2">Proyectos</h2>
       </div>
 
       {/* Swiper / Carrusel */}

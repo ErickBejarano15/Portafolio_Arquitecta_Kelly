@@ -33,7 +33,7 @@ const Reviews = () => {
 
   return (
     <section className="w-full text-[#598242] py-16 px-4 md:px-32 font-asap">
-      <h2 className="text-center text-5xl md:text-5xl font-bold mb-12">
+      <h2 className="text-center text-5xl md:text-5xl font-bold mb-12 uppercase">
         ¿Qué dicen los clientes?
       </h2>
 
