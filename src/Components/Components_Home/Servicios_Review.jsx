@@ -11,13 +11,13 @@ import imgInterventoria from '../../assets/Home/Servicios/interventoria.png';
 
 const servicios = [
   {
-    id: 1,
-    titulo: 'LLAVE EN MANO',
+    id: 2 ,
+    titulo: 'REMODELACIÓN',
     descripcion: 'Desde la idea hasta el final, me ocupo de todo y tú disfrutas el resultado.',
     img: imgLlave,
   },
   {
-    id: 2,
+    id: 1,
     titulo: 'DISEÑO',
     descripcion: 'Transformo tus ideas y necesidades en espacios donde cada rincón te haga sentir a gusto.',
     img: imgDiseño,
