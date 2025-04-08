@@ -57,7 +57,7 @@ const NavBar = () => {
                 key={path}
                 to={path}
                 onClick={() => setMenuOpen(false)}
-                className='block py-2 px-4 font-montserrat text-white hover:text-yellow-500 transition duration-300'
+                className='block py-2 px-4 font-manrope font-bold text-white hover:text-yellow-500 transition duration-300'
               >
                 {label}
               </Link>

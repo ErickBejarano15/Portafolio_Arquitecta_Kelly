@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTools, FaHardHat, FaCouch } from 'react-icons/fa';
+import { TfiPencilAlt } from 'react-icons/tfi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -60,7 +61,7 @@ const Proyectos_Preview = () => {
 
                 {proyecto.desc && (
                   <p
-                    className="text-sm mb-3 max-w-sm text-justify"
+                    className="text-sm mb-3 max-w-sm text-justify font-manrope font-bold"
                     style={{
                       textShadow: '1px 1px 2px rgba(0,0,0,0.7)',
                     }}
@@ -73,7 +74,7 @@ const Proyectos_Preview = () => {
                 <div className="flex flex-col gap-2 text-sm mb-4">
                   {proyecto.tags?.includes('Diseño') && (
                     <div className="flex items-center gap-2">
-                      <FaTools className="text-xl" />
+                      <TfiPencilAlt className="text-xl" />
                       <span>Diseño</span>
                     </div>
                   )}
@@ -94,7 +95,7 @@ const Proyectos_Preview = () => {
                 {/* BOTÓN VER MÁS estilizado */}
                 <Link
                   to={`/proyectos/${proyecto.id}`}
-                  className="text-sm bg-transparent border border-white text-white px-4 py-2 transition duration-300 hover:text-lime-600 active:text-lime-700"
+                  className="text-sm bg-transparent font-manrope font-bold text-white px-4 py-2 transition duration-300 hover:text-lime-600 active:text-lime-700"
                 >
                   Ver más
                 </Link>
