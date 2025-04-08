@@ -19,17 +19,17 @@ const Proyectos_Preview = () => {
     <section className="w-full py-12 px-4 md:px-32 font-asap font-bold">
       {/* Título principal */}
       <div className="relative mb-12 text-center">
-        <h2 className="text-5xl md:text-5xl text-[#598242] text-center uppercase mb-2">Proyectos</h2>
+        <h2 className="text-5xl md:text-5xl text-[#598242] uppercase mb-2">Proyectos</h2>
       </div>
 
       {/* Swiper / Carrusel */}
       <Swiper
         modules={[Autoplay, Pagination]}
-        spaceBetween={8} // ← AQUÍ puedes cambiar el espacio entre tarjetas (en píxeles)
+        spaceBetween={8}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 2 },
-          1024: { slidesPerView: 4 }, // ← Cambia cuántas tarjetas aparecen en escritorio
+          1024: { slidesPerView: 4 },
         }}
         autoplay={{
           delay: 10000,
@@ -40,21 +40,31 @@ const Proyectos_Preview = () => {
         {proyectos.map((proyecto) => (
           <SwiperSlide key={proyecto.id}>
             <div className="relative group overflow-hidden shadow-md border-none">
-              {/* IMAGEN */}
+              {/* IMAGEN con efecto blanco y negro al hacer hover */}
               <img
                 src={proyecto.img}
                 alt={proyecto.title}
-                className="w-full h-[480px] object-cover rounded-none group-hover:opacity-40 transition duration-500"
-                // ↑ Cambia `h-[380px]` para ajustar la ALTURA de la tarjeta (Ej: h-[320px])
-                // ↑ Puedes usar `rounded-md` si quieres bordes redondeados
+                className="w-full h-[480px] object-cover rounded-none transition duration-500 group-hover:grayscale"
               />
 
               {/* CONTENIDO AL HACER HOVER */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 text-white p-4 flex flex-col justify-end bg-black bg-opacity-40">
-                <h3 className="text-xl font-bold mb-2">{proyecto.title}</h3>
+                <h3
+                  className="text-xl font-bold mb-2"
+                  style={{
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
+                  }}
+                >
+                  {proyecto.title}
+                </h3>
 
                 {proyecto.desc && (
-                  <p className="text-sm mb-3 max-w-sm text-justify">
+                  <p
+                    className="text-sm mb-3 max-w-sm text-justify"
+                    style={{
+                      textShadow: '1px 1px 2px rgba(0,0,0,0.7)',
+                    }}
+                  >
                     {proyecto.desc}
                   </p>
                 )}
@@ -81,10 +91,10 @@ const Proyectos_Preview = () => {
                   )}
                 </div>
 
-                {/* BOTÓN INDIVIDUAL */}
+                {/* BOTÓN VER MÁS estilizado */}
                 <Link
                   to={`/proyectos/${proyecto.id}`}
-                  className="text-sm bg-white text-black px-4 py-2 hover:bg-gray-200 transition"
+                  className="text-sm bg-transparent border border-white text-white px-4 py-2 transition duration-300 hover:text-lime-600 active:text-lime-700"
                 >
                   Ver más
                 </Link>

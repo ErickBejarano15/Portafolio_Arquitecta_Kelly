@@ -10,6 +10,7 @@ export default {
         'gris-canva': '#598242',
         'background-color': '#598242',
         'gris-canva-osc': '#2D302D',
+        'oro': '#a39240', 
       },
       fontFamily: {
         rem: ["REM", "sans-serif"],
