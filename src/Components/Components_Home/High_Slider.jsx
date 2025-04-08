@@ -1,8 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+
 import imgSlide1 from '../../assets/Home/High_Slader/slide1.png';
 import imgSlide2 from '../../assets/Home/High_Slader/slide2.png';
 import imgSlide3 from '../../assets/Home/High_Slader/slide3.png';
@@ -43,11 +45,10 @@ const High_Slider = () => {
   return (
     <div className="w-full mx-auto -mt-20">
       <Swiper
-        modules={[Autoplay, Pagination]}
-        spaceBetween={0}
-        centeredSlides={true}
-        loop={true} // ← 🔁 Evita el "blanco" al final
-        speed={1000} // ← 🌊 Transición suave entre slides
+        modules={[Autoplay, Pagination, EffectFade]}
+        effect="fade"
+        loop={true}
+        speed={1000}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -57,17 +58,13 @@ const High_Slider = () => {
       >
         {slides.map((slide, idx) => (
           <SwiperSlide key={idx}>
-            <div className="relative w-full">
-              {/* Imagen de fondo */}
-              <img
-                src={slide.image}
-                alt={`Slide ${idx}`}
-                className="w-full h-screen object-cover transition-all duration-1000 ease-in-out"
-              />
-
-              {/* Overlay + Texto justificado a la izquierda */}
+            <div
+              className="w-full h-screen bg-cover bg-center bg-no-repeat relative"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              {/* Overlay + texto alineado a la izquierda */}
               <div className="absolute inset-0 flex items-center bg-black bg-opacity-40 px-8 md:px-32">
-                <h2 className="text-white text-3xl md:text-5xl font-bold font-asap text-left leading-snug drop-shadow-md">
+                <h2 className="text-white text-3xl md:text-5xl font-bold font-gowun_dodum text-left leading-snug drop-shadow-lg">
                   {slide.text}
                 </h2>
               </div>
