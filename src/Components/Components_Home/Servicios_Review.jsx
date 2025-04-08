@@ -61,7 +61,7 @@ const Servicios_Review = () => {
                   alt={s.titulo}
                   className="w-full h-[250px] object-cover transition-transform duration-500 hover:scale-105"
                 />
-                <h3 className="text-xl font-bold">{s.titulo}</h3>
+                <h3 className="text-xl font-semibold">{s.titulo}</h3>
                 <p className="text-sm px-2">{s.descripcion}</p>
               </div>
             </SwiperSlide>
@@ -83,7 +83,7 @@ const Servicios_Review = () => {
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition duration-300">
         <h3
-          className="text-white text-2xl font-bold px-4 transition-colors duration-300 group-hover:text-white"
+          className="text-white text-2xl font-semibold px-4 transition-colors duration-300 group-hover:text-white"
           style={{
             textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
           }}
