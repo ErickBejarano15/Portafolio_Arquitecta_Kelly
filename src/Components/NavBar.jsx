@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import logo from "../assets/Logo.png";
+import logo from "../assets/Logo.svg";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const NavBar = () => {
           <img
             src={logo}
             alt="Logo"
-            className="w-24 h-24 md:w-24 md:h-24 object-contain"
+            className="h-16 w-auto md:h-20 object-contain"
           />
           {/*<span className='flex flex-col leading-tight'>
             <span className='font-rem text-2xl md:text-4xl text-slate-900'>KELLY</span>
@@ -44,7 +44,7 @@ const NavBar = () => {
         </div>
 
         {/* Enlaces de navegación */}
-        <div className={`absolute top-full left-0 w-full bg-white md:bg-transparent md:static md:flex md:items-center md:w-auto transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:opacity-100 md:max-h-screen'}`}>
+        <div className={`absolute top-full left-0 w-full bg-gris-canva md:bg-transparent md:static md:flex md:items-center md:w-auto transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 md:opacity-100 md:max-h-screen'}`}>
           <div className='flex flex-col md:flex-row md:gap-5'>
             {[
               { path: '/', label: 'Inicio' },
@@ -57,7 +57,7 @@ const NavBar = () => {
                 key={path}
                 to={path}
                 onClick={() => setMenuOpen(false)}
-                className='block py-2 px-4 font-manrope font-semibold text-white hover:text-yellow-500 transition duration-300'
+                className='block py-2 px-4 font-manrope font-medium text-white hover:text-yellow-500 transition duration-300'
               >
                 {label}
               </Link>

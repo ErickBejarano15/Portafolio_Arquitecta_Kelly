@@ -62,9 +62,9 @@ const High_Slider = () => {
               className="w-full h-screen bg-cover bg-center bg-no-repeat relative"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              {/* Overlay + texto alineado a la izquierda */}
-              <div className="absolute inset-0 flex items-center bg-black bg-opacity-40 px-8 md:px-32">
-                <h2 className="text-white text-3xl md:text-5xl font-bold font-gowun_dodum text-left leading-relaxed md:leading-loose drop-shadow-lg">
+              {/* Overlay + texto alineado a la izquierda y centrado verticalmente */}
+              <div className="absolute inset-0 flex items-center justify-start bg-black bg-opacity-40 px-8 md:px-32">
+                <h2 className="text-white text-4xl md:text-6xl font-bold font-gowun_dodum text-left leading-normal drop-shadow-lg">
                   {slide.text}
                 </h2>
               </div>

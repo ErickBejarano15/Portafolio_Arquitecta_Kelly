@@ -4,6 +4,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import imgFernando from '../../assets/Home/Reviews/fernando.png';
 import imgGladis from '../../assets/Home/Reviews/gladis.png';
+import imgAna from '../../assets/Home/Reviews/Ana.png';
 
 const Reviews = () => {
   const testimonios = [
@@ -19,11 +20,11 @@ const Reviews = () => {
       texto: 
       'Conozco el trabajo y desempeño profesional de la arquitecta Kelly. De hecho hemos contratado la reforma de nuestro apartamento y otros más. Su planificación,ejecución y entrega de los trabajos han sido a satisfacción. Recomiendo, a quienes estén en planes de construir,modificar,remodelar que cuenten con su asesoría.',
     },
-    // {
-    //   nombre: 'Carlos Martínez',
-    //   imagen: 'ruta/a/carlos.jpg',
-    //   texto: 'Muy profesional, cumplida con los tiempos y atenta a cada detalle. ¡Excelente experiencia!'
-    // },
+     {
+      nombre: 'Ana Teresa Ospina ',
+      imagen: imgAna,
+      texto: 'Hace un año y medio, decidí tener mi propio consultorio. Desde el primer momento, su enfoque detallado y su capacidad para entender mis necesidades fueron clave. No solo me propusieron soluciones innovadoras para optimizar el espacio, sino que también me ayudaron a elegir materiales y colores que transmitieran calidez y profesionalismo. Además, siempre estuvieron atentos a mi presupuesto, buscando alternativas de calidad sin sacrificar el diseño.\n\nEl proceso fue fluido y organizado, cumpliendo con los plazos establecidos y manteniéndome informada en cada etapa. Cuando vi el resultado final, superó mis expectativas: un consultorio elegante, funcional y perfectamente adaptado a mi estilo de trabajo.',
+     },
     // {
     //   nombre: 'Laura Torres',
     //   imagen: 'ruta/a/laura.jpg',
@@ -52,9 +53,12 @@ const Reviews = () => {
                 className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
               />
               <h3 className="font-bold text-black text-base mb-2">{testimonio.nombre}</h3>
-              <p className="text-sm text-gray-800 leading-relaxed">
-                {testimonio.texto}
-              </p>
+              <div className="text-sm text-gray-800 leading-relaxed text-justify space-y-4">
+  {testimonio.texto.split('\n').map((line, i) => (
+    <p key={i}>{line}</p>
+  ))}
+</div>
+
               <div className="w-full h-[1px] bg-black my-8"></div>
             </div>
           </SwiperSlide>

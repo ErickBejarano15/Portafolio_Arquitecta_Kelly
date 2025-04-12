@@ -3,14 +3,15 @@ import Resumen_Proyectos from '../Components/Components_Proyectos/Resumen_Proyec
 import Filtro_Servicios from '../Components/Components_Proyectos/Filtros_Servicios';
 import Lista_Proyectos from '../Components/Components_Proyectos/Lista_Proyectos';
 import proyectosData from '../data/Proyectos_Data.json';
-import { imagenesProyectos } from '../data/Proyectos_Data';
+import { imagenesProyectos } from '../data/Proyectos_Data.js'; // ✅ Corrección aquí
 
 const Proyectos = () => {
   const [filtro, setFiltro] = useState('Todos');
 
   const proyectos = proyectosData.map((proyecto, index) => ({
     ...proyecto,
-    img: imagenesProyectos[index]
+    img: imagenesProyectos[index][0],     // ✅ destacada
+    galeria: imagenesProyectos[index],    // ✅ galería completa
   }));
 
   const proyectosFiltrados =

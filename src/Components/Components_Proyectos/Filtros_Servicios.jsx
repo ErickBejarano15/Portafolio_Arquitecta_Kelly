@@ -1,5 +1,5 @@
 const Filtro_Servicios = ({ filtro, setFiltro }) => {
-    const servicios = ['Todos', 'Diseño', 'Construcción', 'Mobiliario'];
+    const servicios = ['Todos', 'Diseño', 'Construcción', 'Mobiliario', 'Muralismo'];
   
     return (
       <div className="flex flex-wrap gap-4 mb-10">
@@ -9,7 +9,7 @@ const Filtro_Servicios = ({ filtro, setFiltro }) => {
           onClick={() => setFiltro(servicio)}
           className={`px-4 py-2 border text-sm uppercase font-semibold transition
             ${filtro === servicio
-              ? 'bg-black text-white'
+              ? 'bg-gris-canva text-white'
               : 'bg-white text-black hover:bg-gray-200'}
           `}
         >

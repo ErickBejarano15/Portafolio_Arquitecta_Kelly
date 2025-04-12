@@ -1,28 +1,33 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import proyectosData from "../data/Proyectos_Data.json";
+import React, { useState } from 'react';
+import Resumen_Proyectos from '../Components/Components_Proyectos/Resumen_Proyectos';
+import Filtro_Servicios from '../Components/Components_Proyectos/Filtros_Servicios';
+import Lista_Proyectos from '../Components/Components_Proyectos/Lista_Proyectos';
+import proyectosData from '../data/Preoyecto_Data.json'; // ← nombre corregido
+import { imagenesProyectos } from '../data/Proyectos_Imagenes';
 
-const ProyectosContext = createContext();
+const Proyectos = () => {
+  const [filtro, setFiltro] = useState('Todos');
 
-export const ProyectosProvider = ({ children }) => {
-  const [proyectos, setProyectos] = useState([]);
-  const [proyectoSeleccionado, setProyectoSeleccionado] = useState(null);
+  const proyectos = proyectosData.map((proyecto, index) => ({
+    ...proyecto,
+    img: imagenesProyectos[index][0],     // imagen destacada
+    galeria: imagenesProyectos[index],    // galería completa
+  }));
 
-  useEffect(() => {
-    setProyectos(proyectosData);
-  }, []);
-
-  const seleccionarProyecto = (id) => {
-    const proyecto = proyectos.find((p) => p.id === parseInt(id));
-    setProyectoSeleccionado(proyecto);
-  };
+  const proyectosFiltrados =
+    filtro === 'Todos'
+      ? proyectos
+      : proyectos.filter((p) =>
+          p.tags?.some((tag) => tag.toLowerCase() === filtro.toLowerCase())
+        );
 
   return (
-    <ProyectosContext.Provider
-      value={{ proyectos, proyectoSeleccionado, seleccionarProyecto }}
-    >
-      {children}
-    </ProyectosContext.Provider>
+    <section className="w-full bg-white py-12 px-6 md:px-20 font-asap -mt-10">
+      <Resumen_Proyectos />
+      <Filtro_Servicios filtro={filtro} setFiltro={setFiltro} />
+      <Lista_Proyectos proyectos={proyectosFiltrados} />
+    </section>
   );
 };
 
-export const useProyectos = () => useContext(ProyectosContext);
+export default Proyectos;

@@ -9,6 +9,7 @@ import Servicios from "./pages/Servicios";
 import Proyectos from "./pages/Proyectos";
 import DetalleProyecto from './pages/DetalleProyecto';
 import Footer from "./Components/Footer";
+import WhatsappButton from './Components/WhatsappButton';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/proyectos/:id" element={<DetalleProyecto />} />
         </Routes>
       </div>
+      <WhatsappButton />
       <Footer />
     </div>
   );

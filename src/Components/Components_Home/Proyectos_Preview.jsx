@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaTools, FaHardHat, FaCouch } from 'react-icons/fa';
-import { TfiPencilAlt } from 'react-icons/tfi';
+import { FaHardHat, FaCouch, FaPaintBrush } from 'react-icons/fa'; // 🎨 Agregado FaPaintBrush
+import {TfiPencilAlt} from "react-icons/tfi";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -8,12 +8,12 @@ import 'swiper/css/pagination';
 import { Link } from 'react-router-dom';
 
 import proyectosData from '../../data/Proyectos_Data.json';
-import { imagenesProyectos } from '../../data/Proyectos_Data';
+import { imagenesProyectos } from '../../data/Proyectos_Data.js';
 
 const Proyectos_Preview = () => {
   const proyectos = proyectosData.map((proyecto, index) => ({
     ...proyecto,
-    img: imagenesProyectos[index],
+    img: imagenesProyectos[index]?.[0], // ✅ Muestra la primera imagen por proyecto
   }));
 
   return (
@@ -41,17 +41,17 @@ const Proyectos_Preview = () => {
         {proyectos.map((proyecto) => (
           <SwiperSlide key={proyecto.id}>
             <div className="relative group overflow-hidden shadow-md border-none">
-              {/* IMAGEN con efecto blanco y negro al hacer hover */}
+              {/* Imagen con efecto blanco y negro al hacer hover */}
               <img
                 src={proyecto.img}
                 alt={proyecto.title}
                 className="w-full h-[480px] object-cover rounded-none transition duration-500 group-hover:grayscale"
               />
 
-              {/* CONTENIDO AL HACER HOVER */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 text-white p-4 flex flex-col justify-end bg-black bg-opacity-40">
+              {/* Contenido al hacer hover */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 text-gris-canva p-4 flex flex-col justify-end bg-black bg-opacity-40">
                 <h3
-                  className="text-xl font-bold mb-2"
+                  className="text-lg font-medium mb-2 text-gris-canva"
                   style={{
                     textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
                   }}
@@ -61,7 +61,7 @@ const Proyectos_Preview = () => {
 
                 {proyecto.desc && (
                   <p
-                    className="text-xs mb-3 max-w-sm text-justify font-manrope font-semibold"
+                    className="text-xs text-white mb-3 max-w-sm text-justify font-manrope font-semibold"
                     style={{
                       textShadow: '1px 1px 2px rgba(0,0,0,0.7)',
                     }}
@@ -70,29 +70,35 @@ const Proyectos_Preview = () => {
                   </p>
                 )}
 
-                {/* ÍCONOS DE SERVICIO */}
-                <div className="flex flex-col gap-2 text-sm mb-4">
+                {/* Íconos de servicio */}
+                <div className="flex flex-col gap-2 text-white text-sm mb-4">
                   {proyecto.tags?.includes('Diseño') && (
                     <div className="flex items-center gap-2">
-                      <TfiPencilAlt className="text-xs" />
+                      <TfiPencilAlt className="text-lg text-gris-canva" />
                       <span>Diseño</span>
                     </div>
                   )}
                   {proyecto.tags?.includes('Construcción') && (
                     <div className="flex items-center gap-2">
-                      <FaHardHat className="text-xs" />
+                      <FaHardHat className="text-lg text-gris-canva" />
                       <span>Construcción</span>
                     </div>
                   )}
                   {proyecto.tags?.includes('Mobiliario') && (
                     <div className="flex items-center gap-2">
-                      <FaCouch className="text-xs" />
+                      <FaCouch className="text-lg text-gris-canva" />
                       <span>Mobiliario</span>
+                    </div>
+                  )}
+                  {proyecto.tags?.includes('Muralismo') && (
+                    <div className="flex items-center gap-2">
+                      <FaPaintBrush className="text-lg text-gris-canva" />
+                      <span>Muralismo</span>
                     </div>
                   )}
                 </div>
 
-                {/* BOTÓN VER MÁS estilizado */}
+                {/* Botón Ver Más */}
                 <Link
                   to={`/proyectos/${proyecto.id}`}
                   className="text-sm bg-transparent font-manrope font-bold text-white px-4 py-2 transition duration-300 hover:text-lime-600 active:text-lime-700"

@@ -6,25 +6,32 @@
     "detalles": "Este proyecto consistió en la renovación arquitectónica completa de una vivienda urbana tradicional. Se incorporaron elementos de diseño modernos respetando la estructura original. La ejecución se dividió en dos fases y contempló mejoras en espacios sociales, cocina, y la conexión visual con zonas exteriores. También se incluyeron soluciones mobiliarias a medida.",
     "tags": ["Diseño", "Construcción", "Mobiliario"]
   },
-  {
+   {
     "id": 1,
+    "title": "SUR DEL VALLE DE ABURRA",
+    "desc": "Espacios prácticos y luminosos que se ajustan a cualquier necesidad. Proyecto de inversión para alquilar",
+    "detalles": "Reforma interior de espacio médico con enfoque en funcionalidad y calidez. Se utilizaron colores neutros, materiales de fácil mantenimiento, y mobiliario ergonómico. El resultado es un espacio que transmite profesionalismo y tranquilidad.",
+    "tags": ["Diseño", "Construcción"]
+  },
+  {
+    "id": 2,
     "title": "CONSULTORIO MÉDICO",
-    "desc": "Aprovechamos cada centímetro para crear un consultorio flexible, elegante y acogedor.",
+    "desc": "Optimizamos cada centímetro para crear un consultorio flexible, elegante y acogedor que refleja la personalidad y estilo profesional de los médicos.",
     "detalles": "Reforma interior de espacio médico con enfoque en funcionalidad y calidez. Se utilizaron colores neutros, materiales de fácil mantenimiento, y mobiliario ergonómico. El resultado es un espacio que transmite profesionalismo y tranquilidad.",
     "tags": ["Diseño", "Construcción", "Mobiliario"]
   },
   {
-    "id": 2,
-    "title": "LOCAL GASTRONÓMICO",
-    "desc": "Diseñado para ofrecer una experiencia culinaria íntima y contemporánea.",
-    "detalles": "Este restaurante boutique fue diseñado con un enfoque minimalista y materiales como madera, concreto pulido y luces cálidas. El mobiliario fue diseñado a medida para maximizar espacio y funcionalidad.",
-    "tags": ["Diseño"]
+    "id": 3,
+    "title": "HOGAR PATIO BONITO",
+    "desc": "El nuevo hogar de una familia joven, con espacios versátiles, funcionales que representa la identidad de sus dueños.",
+    "detalles": "Diseño y adecuación integral de vivienda para una familia joven. Se optimizaron los espacios sociales para mayor funcionalidad, se emplearon tonos neutros y cálidos para dar sensación de amplitud, y se integraron elementos decorativos personalizados que reflejan la identidad de sus propietarios. El resultado es un hogar versátil, moderno y acogedor.",
+    "tags": ["Diseño", "Construcción", "Muralismo"]
   },
   {
-    "id": 3,
-    "title": "VIVIENDA CAMPESTRE",
-    "desc": "Una propuesta que mezcla lo moderno con el encanto natural del entorno.",
-    "detalles": "Diseño arquitectónico de una casa en zona rural con amplias ventanas, integración del interior con el paisaje, techos altos y materiales sostenibles. Se realizó el diseño interior y el amoblamiento completo.",
-    "tags": ["Diseño", "Mobiliario"]
+    "id": 4,
+    "title": "KIT KOF BURGER",
+    "desc": "Renovación de un clásico. Potenciamos su identidad urbana y moderna, optimizamos los espacios para mejorar la experiencia del cliente y resaltar su estilo gastronómico único.",
+    "detalles": "Renovación interior de local gastronómico con enfoque en identidad de marca. Se rediseñó la distribución para mejorar la circulación, se incorporaron materiales industriales y elementos visuales distintivos, y se desarrolló mobiliario a medida. El espacio ahora comunica modernidad, eficiencia y estilo urbano alineado con la propuesta gastronómica.",
+    "tags": ["Diseño", "Construcción", "Muralismo"]
   }
 ]
