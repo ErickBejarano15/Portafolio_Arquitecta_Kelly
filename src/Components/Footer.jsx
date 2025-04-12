@@ -4,23 +4,19 @@ import logo from '../assets/logo.svg'; // 🟡 Ajusta la ruta si es diferente
 
 const Footer = () => {
   return (
-    <footer className="bg-[#5e7b42] text-white py-12 px-4 md:px-32 font-asap font-bold min-h-[85vh] flex flex-col justify-between">
+    <footer className="bg-gris-canva text-white py-12 px-4 md:px-32 font-asap font-bold min-h-[85vh] flex flex-col justify-between">
       {/* Contenido del footer */}
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-8 flex-grow">
         {/* Sección izquierda */}
         <div className="flex flex-col items-center md:items-start">
-          <img
-            src={logo}
-            alt="Logo"
-            className="h-16 md:h-20 w-auto mb-6 object-contain"
-          />
+          
           <h3 className="text-4xl font-semibold mb-4">Contáctame</h3>
-          <div className="flex text-oro items-center gap-2 mb-2">
-            <FaPhone className="text-lg text-oro" />
+          <div className="flex text-white items-center gap-2 mb-2">
+            <FaPhone className="text-lg text-white" />
             <span>+57 305 234 1622</span>
           </div>
-          <div className="flex text-oro items-center gap-2">
-            <FaEnvelope className="text-lg text-oro" />
+          <div className="flex text-white items-center gap-2">
+            <FaEnvelope className="text-lg text-white" />
             <span>kbenjum@gmail.com</span>
           </div>
         </div>
